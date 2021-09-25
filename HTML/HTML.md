@@ -1,17 +1,16 @@
 # HTML
 
-* [Estrutura de uma pagina web](#Estrutura de uma pagina web)
+* [Estrutura_de_uma_pagina_web](#Estrutura_de_uma_pagina_web)
 * [Cabesalho](#Cabesalho)
 * [Paragrafos](#Paragrafos)
-* [Formataçoes em texto](#Formataçoes em texto)
-* [Listas ordenadas e não ordenadas](#Listas ordenadas e não ordenadas)
+* [Formataçoes_em_texto](#Formataçoes_em_texto)
+* [Listas_ordenadas_e_não_ordenadas](#Listas_ordenadas_e_não_ordenadas)
 * [Imagens](#Imagens)
 * [Links](#Links)
 * [Tabelas](#Tabelas)
 * [Formularios](#Formularios)
-* [Caracteres especiais](#Caracteres especiais)
 
-## Estrutura de uma pagina web
+## Estrutura_de_uma_pagina_web
 
 Utilizando o html pode fazer formataçoes em nossa pagina web como por exemplo podemos escolher que parte de um texto queremos deixar em negrito.
 
@@ -77,7 +76,7 @@ Se quisermos utilizar uma linha para separar conteudos em nosso site temos a tag
 
 que faz isso para nos
 
-## Formataçoes em texto
+## Formataçoes_em_texto
 
 Existem varias tags para que possamos formatar um texto hj em dia como colocar em negrito porem no caso do negrito não e muito recomendado hj em dia usar o "<b>" para colocar algo em negrito e sim utilizar o "<strong>".
 
@@ -88,7 +87,7 @@ Esse é um texto <strike>errado</strike> <!--Esta tag ira deixar um risco em cim
 
 ```
 
-## Listas ordenadas e não ordenadas
+## Listas_ordenadas_e_não_ordenadas
 
 ```html
 Formularios<ul type="circle"><!--Lista não ordenada e no tipo podemos escolher os tipos de marcadores e tem circle, disc ou square-->
@@ -121,7 +120,7 @@ Para que possamos adicionar links no html usamos a tag <a> e podemos criara link
 
 ## Tabelas
 
-```html
+```
 <table border="2">
     <tr><!--Esta tag e a linha da tabela-->
         <th><!--Esta tag e o dado da linha-->
