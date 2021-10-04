@@ -1,0 +1,20 @@
+.mercadoria {
+	border: 1px solid gray;
+	width: 200px;
+	height: 200px;
+	background: red;
+	float: left;
+}
+#conteudo {
+	border: 1px solid grey;
+	background: green;
+
+}
+.test {
+	border: 1px solid grey;
+	background: blue;
+}
+#clear-zero {
+	clear: both;
+
+}
