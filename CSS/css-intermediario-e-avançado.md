@@ -3,6 +3,13 @@
 * [mais-sobre-seletores](#mais-sobre-seletores)
 * [heranca-especifica](#heranca-especifica)
 * [CriandoBarrasDeNavegaçãoVertical](#CriandoBarrasDeNavegaçãoVertical)
+* [Marcando-pagína-atual](#Marcando-pagína-atual)
+* [BarraDeNavegacaoVertical](#BarraDeNavegacaoVertical)
+* [LayoutLiquido](#LayoutLiquido)
+* [ColunaFalsa](#ColunaFalsa)
+* [EstilizandoTabelas](#EstilizandoTabelas)
+* [EstilizandoFormularios](#EstilizandoFormularios)
+* [ArredondamentoComImagens](#ArredondamentoComImagens)
 
 
 
@@ -98,3 +105,93 @@ h2#verde {/*O id e mais especifico do que a classe*/
 Para fazermos uma lista vertical utilizamos uma lista não ordenada.
 
 Olhar o arquivos navegacaovertical.css
+
+## Marcando-pagína-atual
+
+Para isso podemos fazer usando seletores especifico por exemplo:
+
+```css
+#home .link a {
+    
+}
+```
+
+Neste exemplo diz que quero que seja aplicado o estilo na tag A que e filho da classe link que e filho do id home.
+
+```css
+#home #mavegacao .index a,
+#sobre #mavegacao .sobre a {
+	background-position: right bottom;
+	background-color: #f99200;
+	color: #FFF;
+}
+```
+
+## LayoutLiquido
+
+Ao criar layout fixos eu tenho um maior controle sobre o que é mostrado ao usuario mas dependendo e melhor usar outro tipo de layout
+
+## ColunaFalsa
+
+Este tipo de coluna não podemos aplicar em layout liquidos e apenas em layouts fixos
+
+## EstilizandoTabelas
+
+Quando colocamos bordas em elemetos de uma tabela como th, tr e td se fica um espacamento entre eles porem para resolver isso apenas precisamos usar o comando:
+
+```css
+table {
+	width: 600px;
+	border-collapse: collapse;
+}
+```
+
+E as bordas irão se juntar, por padrão se vem com separete.
+
+## EstilizandoFormularios
+
+Neste parte aprendemos uma tag chamada fieldset que serve para agrupar dados semelhantes.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Estilizando Formularios</h1>
+    <form>
+        <fieldset>
+            
+        </fieldset>
+    </form>
+
+</body>
+</html>
+```
+
+Uma coisa que tambem vi foi o seletor por atributo por exemplo eu tenho varios inputs em meu html e quero escolher apenas os inputs que são do tipo texto eu faço:
+
+```css
+input[type="text"]{
+    
+}
+```
+
+porem nem todos os navegadores tem suporte a este tipo de seletor por ser recente e por conta disso e recomendado a utilização de classes.
+
+### Degrade
+
+Para se fazer um degrade no css utilizamos o linear-grade porem não funciona em todos os navegadores e por isso temos que configurar o webkit para usa-lo:
+
+```css
+background: linear-gradient(to bottom, #faa600, #f68a00);
+```
+
+
+
+## ArredondamentoComImagens
