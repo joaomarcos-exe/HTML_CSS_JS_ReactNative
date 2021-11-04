@@ -5,11 +5,12 @@
 
 body {
     background: #fff url(../imagens/bg.png);
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
     margin: 15px;
 }
 
 #container {
-    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
     margin: 0 auto;
     min-width: 740px;
     max-width: 1180px;
@@ -17,6 +18,7 @@ body {
 
 #topo {
     position: relative;
+    background: #dbcd87;
     height: 15.625em;
     min-height: 250px;
     
@@ -118,4 +120,76 @@ ul#navegacao a:hover{
     float: right;
     width: 226px;
     height: 164px;
+}
+
+/*Fim TOPO*/
+
+/*Inicio Conteudo*/
+
+#area-principal {
+    float: left;
+    width: 50%;
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0;
+}
+
+#area-lateral{
+    float: right;
+    width: 50%;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0;
+}
+
+.conteudo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#rodape {
+    clear: both;
+    padding: 16px;
+    background: #FFF url(../imagens/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+}
+
+/*Formatando textos*/
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/*Formatação lateral*/
+#beneficio li {
+    padding: 8px;
+    border-bottom: 1ps solid #f3efcb;
+    height: 6em;
+}
+
+#beneficio li a img{
+    float: left;
+    margin-right: 8px;
+}
+
+#beneficio li a p{
+    color: #000;
+    font-size: 0.8em;
+
+}
+
+#beneficio li a h3{
+ font-size: 1.1em;
+ color: #615b2d;
+ padding: 5px 0;
+ background: url(../imagens/ornamento.png) no-repeat center right;
+}
+
+#beneficio li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
 }
