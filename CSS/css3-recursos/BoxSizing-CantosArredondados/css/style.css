@@ -1,0 +1,6 @@
+#caixa {
+    width: 640px;
+    height: 425px;
+    background: url(../img/perfil.jpg);
+    border-radius: 600px;
+}
