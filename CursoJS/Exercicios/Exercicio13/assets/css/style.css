@@ -1,25 +1,31 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
- body{
-    background: purple;
- }
 
-.container{
-    display: flex;
-    background: blue;
-    max-width: 650px;
+body{
+    background: cadetblue;
+}
+
+#container{
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#relogio{
+    font-size: 3em;
 }
 
 #window{
-    flex-direction: center;
-    align-items: center;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+    display: flex;
+    align-items:left;
+    justify-content: center;
+    flex-direction: column;
+    
 }
 
-/*
-    Revisar os comandos do display flex
-Algo esta sendo esquecido e por conta disso o a div windows
-não esta se mexendo.
-*/
