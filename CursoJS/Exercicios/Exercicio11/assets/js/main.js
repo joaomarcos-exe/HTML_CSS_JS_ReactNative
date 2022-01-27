@@ -6,7 +6,7 @@ const backgroundColorContainer = estilosBody.backgroundColor;
 
 for (let p of ps) {
     p.style.backgroundColor = backgroundColorContainer
-    p.style.color = '#FFFF'
+    p.style.color = 'purple'
 }
 
 
