@@ -1,58 +1,32 @@
-// const name = 'Joao';
+class Dispositivo{
+	contrutor(nome){
+		this.nome = nome;
+		this.ligado = false;
+	}
 
-// function takeName([...test]){
-//     return function(){
-//         console.log(test)
-//     }
-// };
+	ligar(){
+		if(this.ligado){
+			console.log('Ligado')
+			return
+		}
+		this.ligado = true;
+	}
 
-// const algo = takeName([1, 2, 3, 4])
-// algo()
-
-
-function f1(callback) {
-    setTimeout(function(){
-        console.log('f1')
-        if(callback) f1callback()
-    },5000)
+	desligar(){
+		if(!this.ligado){
+			console.log('Desligado')
+			return;
+		}
+	}
 }
-function f2(callback) {
-    setTimeout(function(){
-        console.log('f2')
-        if(callback) f2callback()
-    },800)
-}
-function f3(callback) {
-    setTimeout(function(){
-        console.log('f3')
-        if(callback) f3callback()
-    },1000)
-}
+const s2 = new Dispositivo()
 
-
-
-
-// f1(function() {
-//     f2(function(){
-//         f3(function(){
-//             console.log('Ola')
-//         })
-//     })
-// })
-
-f1(f1callback)
-
-function f1callback(){
-    f2(f2callback)
+class Smartphone extends Dispositivo{//Pega os metodos do Dispostivo
+	construtor(nome, cor){
+		super(nome);//chamar o contrutor da classe pai
+        this.cor = "blue"
+	}
 }
 
-function f2callback(){
-    f3(f3callback)
-}
-
-function f3callback(){
-    console.log('Ola Mundo')
-}
-
-
-
+const s1 = new Smartphone('Iphone', "blue")
+console.log(Smartphone)
