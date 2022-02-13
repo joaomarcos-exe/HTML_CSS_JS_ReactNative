@@ -8,7 +8,7 @@
 		"import {Text} from 'react-native'",
 		"",
 		"",
-		"export default () => {",
+		"export default props => {",
 		"    return(",
 		"        <Text></Text>",
 		"    )",
