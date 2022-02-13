@@ -1,5 +1,6 @@
 import React from 'react'
 import {Text} from 'react-native'
+import Estilo from './estilo'
 
 export default function Comp(){
 
@@ -7,16 +8,17 @@ export default function Comp(){
 
 }
 
-function Comp1(){
+export function Comp1(){
 
-    return <Text>Comp #1</Text>
-
-}
-
-function Comp2(){
-
-    return <Text>Comp #2</Text>
+    return <Text style = {Estilo.textP}>Comp #1</Text>
 
 }
 
-export {Comp1, Comp2}
+export function Comp2(){
+
+    return <Text style = {Estilo.textP}>Comp #2</Text>
+
+}
+
+//export {Comp1, Comp2}
+//export default Comp
