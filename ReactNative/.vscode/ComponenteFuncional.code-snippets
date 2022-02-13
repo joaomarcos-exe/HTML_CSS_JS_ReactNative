@@ -1,0 +1,20 @@
+{
+	
+"Print to console": {
+"scope": "javascript",
+	"prefix": "cf",
+	"body": [
+		"import React from 'react'",
+		"import {Text} from 'react-native'",
+		"",
+		"",
+		"export default () => {",
+		"    return(",
+		"        <Text></Text>",
+		"    )",
+		"}",
+		"$2"
+	],
+	"description": "Log output to console"
+}
+}
