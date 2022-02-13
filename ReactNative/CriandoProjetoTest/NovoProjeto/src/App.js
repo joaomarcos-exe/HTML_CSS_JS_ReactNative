@@ -1,7 +1,8 @@
 import React from "react"
 import {View, StyleSheet} from 'react-native'//Invocamos o styleShet para usarmos estilos
 
-import Botao from './components/Botao'
+import Contado from './components/Contador'
+//import Botao from './components/Botao'
 //import MinMax from "./components/MinMax"
 // import X, { Comp1 , Comp2 } from './components/Multi'
 // import BlaBla from './components/Primeiro'
@@ -24,8 +25,9 @@ export default () => (
     //Aqui eu ligo o estilo criado la em baixo ao meu View
     //O primeiro MinMax estamos passando valores string e o segundo valores numericos
     <View style={style.App}>
-        <Botao/>
+        <Contado inicial={0}/>
         {/* <MinMax max='30' min='20'/>
+        <Botao/>
         <MinMax max={100} min={50}/> */}
         {/* <X/>    
         <Titulo principal="Cadastro de produto"
