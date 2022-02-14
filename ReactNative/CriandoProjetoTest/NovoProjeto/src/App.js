@@ -1,7 +1,8 @@
 import React from "react"
 import {View, StyleSheet} from 'react-native'//Invocamos o styleShet para usarmos estilos
 
-import Pai from './components/direto/Pai'
+import Pai from './components/indireto/Pai'
+//import Pai from './components/direto/Pai'
 //import Contado from './components/Contador'
 //import Botao from './components/Botao'
 //import MinMax from "./components/MinMax"
@@ -28,6 +29,7 @@ export default () => (
     <View style={style.App}>
         <Pai/>
         {/* <MinMax max='30' min='20'/>
+        <Pai/>
         <Contado inicial={0}/>
         <Botao/>
         <MinMax max={100} min={50}/> */}
