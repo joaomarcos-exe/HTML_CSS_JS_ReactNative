@@ -2,7 +2,8 @@ import React from "react"
 import {StyleSheet, SafeAreaView} from 'react-native'//Invocamos o styleShet para usarmos estilos
 
 
-import FlexBoxV4 from "./components/layout/FlexBoxV4"
+import Mega from "./components/mega/Mega"
+//import FlexBoxV4 from "./components/layout/FlexBoxV4"
 //import FlexBoxV3 from "./components/layout/FlexBoxV3"
 //import FlexBoxV2 from "./components/layout/FlexBoxV2"
 //import FlexBoxV1 from "./components/layout/FlexBoxV1"
@@ -42,8 +43,9 @@ export default () => (
     //Aqui eu ligo o estilo criado la em baixo ao meu View
     //O primeiro MinMax estamos passando valores string e o segundo valores numericos
     <SafeAreaView style={style.App}>
-        <FlexBoxV4/>
+        <Mega qtdNumeros={60}/>
         {/* <MinMax max='30' min='20'/>
+        <FlexBoxV4/>
         <FlexBoxV3/>
         <FlexBoxV1/>
         <DigiteSeuNome/>
